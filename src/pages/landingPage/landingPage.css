@@ -1,0 +1,60 @@
+/* Default styles for mobile devices */
+.landing-component-div {
+    position: relative;
+  }
+
+  .add-icon {
+    position: absolute;
+    right: 35px;
+    top: 525px;
+  }
+
+  
+  /* HABIT CARD  */
+
+  .habits-div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+/* Styles for tablets (portrait) and up */
+@media (min-width: 768px) {
+
+    .landing-component-div {
+        position: relative;
+      }
+    
+      .add-icon {
+        position: absolute;
+        right: 35px;
+        top: 525px;
+      }
+
+      
+  /* HABIT CARD  */
+
+  .habits-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Styles for laptops and up */
+@media screen and (min-width: 1024px) {
+  .landing-component-div {
+    position: relative;
+  }
+
+  .add-icon {
+    position: absolute;
+    right: 35px;
+    top: 525px;
+  }
+
+  /* HABIT CARD  */
+
+  .habits-div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,27 @@
+/* Default styles for mobile devices */
+.dropdowns {
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-evenly;
+    padding: 15px
+}
+  
+  /* Styles for tablets (portrait) and up */
+  @media (min-width: 768px) {
+    .dropdowns {
+        display: flex;
+        flex-direction: row;  
+        justify-content: space-evenly;
+        padding: 15px
+    }
+  }
+  
+  /* Styles for laptops and up */
+  @media screen and (min-width: 1024px) {
+    .dropdowns {
+        display: flex;
+        flex-direction: row;  
+        justify-content: space-evenly;
+        padding: 15px
+    }
+  }
