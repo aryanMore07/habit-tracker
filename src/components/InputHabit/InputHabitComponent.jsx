@@ -31,6 +31,12 @@ const InputHabitComponent = () => {
 
     const handleClose = () => {
         setOpen(false);
+        setOpen('');
+        setHabitName('');
+        setRepitaions('');
+        setGoal('');
+        setTime('');
+        setStartDate('');
     };
 
     const dispatchData = {
@@ -145,7 +151,7 @@ const InputHabitComponent = () => {
                 </DialogContent>
                 <DialogActions>
                     <Button onClick={handleClose}>Cancel</Button>
-                    <Button onClick={submitInfo}>Subscribe</Button>
+                    <Button onClick={submitInfo}>Add Habit</Button>
                 </DialogActions>
             </Dialog>
 

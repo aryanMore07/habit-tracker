@@ -2,11 +2,13 @@ import React, { useContext } from 'react';
 import './landingPage.css';
 import InputHabitComponent from '../../components/InputHabit/InputHabitComponent';
 import { HabitContext } from '../../contexts/habitContext';
+import { useNavigate } from 'react-router';
 
 const LandingComponent = () => {
 
     const { state } = useContext(HabitContext);
-    console.log(state.habitData);
+    const navigate = useNavigate();
+
     return (
         <div className='landing-component-div'>
             <div className='habits-div'>
@@ -17,11 +19,10 @@ const LandingComponent = () => {
                             state.habitData.map((habit) => {
                                 const { id, habitName, repitations, goal, timeOfDay, startDate } = habit;
                                 return (
-                                    <di key={id} className='habit-div'>
-                                        <div style={{display: 'flex'}}>
-                                            <p><b>Name:</b> {habitName}</p>
-                                            <p><b>Reps:</b> {repitations}</p>
-                                        </div>
+                                    <di key={id} className='habit-div' onClick={() => {
+                                       navigate(`/habit/${id}`)
+                                    }}>
+                                        <p><b>Habit Name:</b> {habitName}</p>
                                     </di>
                                 )
                             })
