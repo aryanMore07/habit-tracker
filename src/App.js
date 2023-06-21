@@ -1,6 +1,8 @@
 
-import { Route, Routes } from 'react-router';
 import './App.css';
+import { Route, Routes } from 'react-router';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
 import LandingComponent from './pages/landingPage/LandingPage';
 import IndividualHabitPage from './pages/individualHabitPage/IndividualHabitPage';
 
