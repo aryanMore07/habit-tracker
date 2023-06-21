@@ -17,7 +17,7 @@ const IndividualHabitPage = () => {
         <div><p><b>Repitations: </b>{repitations}</p></div>
         <div><p><b>StartDate: </b>{startDate}</p></div>
         <div><p><b>Time of Day: </b>{timeOfDay}</p></div>
-        <div><button className='btn btn-primary'>Edit</button><button className='btn btn-danger'>delete</button></div>
+        <div style={{display: 'flex', justifyContent: 'space-evenly', width: '15rem'}}><button className='btn btn-primary'>Edit</button><button className='btn btn-danger'>delete</button></div>
     </div>
   )
 }

@@ -17,7 +17,7 @@ const LandingComponent = () => {
                         :
                         (
                             state.habitData.map((habit) => {
-                                const { id, habitName, repitations, goal, timeOfDay, startDate } = habit;
+                                const { id, habitName } = habit;
                                 return (
                                     <di key={id} className='habit-div' onClick={() => {
                                        navigate(`/habit/${id}`)

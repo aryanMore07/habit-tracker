@@ -23,7 +23,7 @@ const InputHabitComponent = () => {
     const [goal, setGoal] = useState('');
     const [time, setTime] = useState('');
     const [startDate, setStartDate] = useState('');
-    const { state, dispatch } = useContext(HabitContext);
+    const {  dispatch } = useContext(HabitContext);
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -66,10 +66,6 @@ const InputHabitComponent = () => {
             <Dialog open={open} onClose={handleClose}>
                 <DialogTitle>New  Habit</DialogTitle>
                 <DialogContent style={{ padding: '15px' }}>
-                    {/* <DialogContentText>
-                        To subscribe to this website, please enter your email address here. We
-                        will send updates occasionally.
-                    </DialogContentText> */}
                     <Box
                         sx={{
                             width: 500,
