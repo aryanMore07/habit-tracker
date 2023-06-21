@@ -1,0 +1,12 @@
+/* Default styles for mobile devices */
+
+  
+  /* Styles for tablets (portrait) and up */
+@media (min-width: 768px) {
+    
+}
+  
+  /* Styles for laptops and up */
+@media screen and (min-width: 1024px) {
+    
+}

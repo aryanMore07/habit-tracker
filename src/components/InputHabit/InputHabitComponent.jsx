@@ -23,7 +23,7 @@ const InputHabitComponent = () => {
     const [goal, setGoal] = useState('');
     const [time, setTime] = useState('');
     const [startDate, setStartDate] = useState('');
-    const {  dispatch } = useContext(HabitContext);
+    const { dispatch } = useContext(HabitContext);
 
     const handleClickOpen = () => {
         setOpen(true);

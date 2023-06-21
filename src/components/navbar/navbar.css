@@ -1,0 +1,53 @@
+/* Default styles for mobile devices */
+.ul-lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: black;
+    padding: 0px 15px 0px 15px;
+    font-size: 25px;
+}
+    
+
+  /* Styles for tablets (portrait) and up */
+  @media (min-width: 768px) {
+    .ul-lists {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style: none;
+        padding-right: 5rem;        
+    }
+
+    .nav-links {
+        text-decoration: none;
+        color: black;
+        padding: 0px 15px 0px 15px;
+        font-size: 25px;
+    }
+
+  }
+  
+  /* Styles for laptops and up */
+  @media screen and (min-width: 1024px) {
+    .ul-lists {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style: none;
+        padding-right: 5rem;        
+    }
+
+    .nav-links {
+        text-decoration: none;
+        color: black;
+        padding: 0px 15px 0px 15px;
+        font-size: 25px;
+    }
+
+  }
